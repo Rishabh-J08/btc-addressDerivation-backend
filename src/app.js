@@ -2,9 +2,12 @@ const express = require('express');
 const deriveRoutes = require('./routes/deriveRoute');
 const cors = require('cors')
 const app = express();
+require('dotenv').config()
+
+const domain = process.env.DOMAIN_NAME
 app.use(
     cors({
-      origin: "http://localhost:5173", 
+      origin: doamin, 
       methods: "GET, POST, OPTIONS",
       allowedHeaders: "Content-Type",
     }),
