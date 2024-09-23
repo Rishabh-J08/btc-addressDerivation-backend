@@ -4,10 +4,9 @@ const cors = require('cors')
 const app = express();
 require('dotenv').config()
 
-const domain = process.env.DOMAIN_NAME
 app.use(
     cors({
-      origin: domain, 
+      origin: "*", 
       methods: "GET, POST, OPTIONS",
       allowedHeaders: "Content-Type",
     }),
