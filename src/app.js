@@ -7,7 +7,7 @@ require('dotenv').config()
 const domain = process.env.DOMAIN_NAME
 app.use(
     cors({
-      origin: doamin, 
+      origin: domain, 
       methods: "GET, POST, OPTIONS",
       allowedHeaders: "Content-Type",
     }),
