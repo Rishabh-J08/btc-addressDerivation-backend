@@ -5,12 +5,13 @@ const app = express();
 require('dotenv').config()
 
 app.use(
-    cors({
-      origin: "*", 
-      methods: "GET, POST, OPTIONS",
-      allowedHeaders: "Content-Type",
-    }),
-  );
+  cors({
+    origin: "*", 
+    methods: "GET, POST, OPTIONS",
+    allowedHeaders: "*",  // Allowing rhe all headers temporarily for testing
+  })
+);
+
   
 
 // Middleware to parse JSON
