@@ -1,4 +1,8 @@
+
 {
+  "build": {
+    "command": "node src/server.js"
+  },
   "routes": [
     {
       "src": "/(.*)",
