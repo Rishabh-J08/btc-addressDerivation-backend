@@ -1,12 +1,8 @@
-
 {
-  "build": {
-    "command": "node src/server.js"
-  },
-  "routes": [
+  "builds": [
     {
-      "src": "/(.*)",
-      "dest": "https://btc-address-derivation-backend.vercel.app"
+      "src": "package.json",
+      "use": "@vercel/node"
     }
   ]
 }
