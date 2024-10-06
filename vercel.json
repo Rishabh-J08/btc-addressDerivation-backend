@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "https://btc-address-derivation-backend.vercel.app/"
+      "dest": "https://btc-address-derivation-backend.vercel.app"
     }
   ]
 }
